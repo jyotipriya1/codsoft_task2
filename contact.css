@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.home-buttom{
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    background-color: rgba(245, 222, 179, 0.434);
+    border-radius: 20%;
+}
+
+.home-buttom a i{
+    font-size: 30px;
+    cursor: pointer;
+    color:#000;
+}
+
+
+.my-img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-image: url('Nice.jpg');
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    border-radius:10%;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.my-img:hover{
+    transform: scale(1.028);
+}
+
+.contact-box{
+    margin: 0 auto;
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 15px 5px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.name,.email-id{
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+.name:hover,.email-id:hover{
+    box-shadow: 2px 4px 8px black;
+}
+
+.name h2,.email-id h2{
+    font-size: 22px;
+}
+
+.name h2 span,.email-id h2 span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.about-my-proffesion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.college,.year,.branch{
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media{
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a img{
+    height: 25px;
+    width: 25px;
+    margin: 2px 10px;
+    transition: all 0.2s linear;
+}
+
+.social-media a img:hover{
+    transform: scale(1.08);
+}
+
+.social-media .facebook img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-media .twitter img{
+    height: 22px;
+    width: 22px;
+}
+/* Responsive  */
+
+@media (max-width : 500px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .my-img{
+      left: 80px;
+    }
+    .contact-box{
+        top: 70%;
+        width: 95%;
+    }
+    .home-buttom{
+        right: 4%;
+    }
+    .contact-box{
+        border: none;
+    }
+}
